@@ -38,7 +38,7 @@ _.mixin({
 
                     renderedView = _.reject(renderedView, function(elem) {
                         if(id == elem.id) return true;
-                    })
+                    });
 
                     var html = func( result );
                     id =  _.uniqueId('tpl_');
@@ -52,7 +52,7 @@ _.mixin({
                         id: id,
                         templateText: templateText
 
-                    })
+                    });
 
                 }, deprElement);
 
@@ -94,7 +94,7 @@ _.mixin({
                             if(!_.isNull(match)) {
                                 attributes[ match[2] ] = $(val).attr('tpl-data-'+match[2]);
                             }
-                        })
+                        });
                         element.callback(renderer, attributes);
 
                     })
@@ -121,6 +121,6 @@ _.mixin({
     }
 
 
-})
+});
 
 _.renderContaintTemplate();
