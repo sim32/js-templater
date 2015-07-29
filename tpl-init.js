@@ -1,11 +1,3 @@
-/*example:
-
- _.onTemplateReady('second', function(callback){
- callback({greetings:'example'});
- })
-
- */
-
 _.onTemplateReady('firstTemplate', function(callback, attribs) {
     callback({count: 9});
 })
