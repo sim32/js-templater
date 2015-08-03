@@ -25,5 +25,13 @@ $(document).on('click', function () {
         })
     }
 
+    setInterval(function(){
+        _.reRenderSingleTemplate('firstTemplate', function (callback) {
+            var max = 7, min = 0;
+            var cnt = Math.floor(Math.random() * (max - min + 1)) + min;
+            callback({count: cnt});
+        })
+    }, 3000);
+
 
 });
