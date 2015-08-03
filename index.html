@@ -11,7 +11,7 @@
 </head>
 <body>
 <script type="text/template" class="template" name="firstTemplate" renderOnRequest="1">
-    <h1>FIRST tpl <%-fv.count %> blocks on this page</h1>
+    <h1>FIRST tpl: <%-fv.count %> blocks on this page</h1>
     <% i=1 %>
     <% _.times(fv.count, function() { %>
 
@@ -28,7 +28,7 @@
 </script>
 
 <script type="text/template" class="template" name="secondTemplate" renderOnRequest="0">
-    <h1>SEC TPL<%-fv.count %> blocks on this page</h1>
+    <h1>SEC TPL: <%-fv.count %> blocks on this page</h1>
     <% i=1 %>
     <% _.times(fv.count, function() { %>
 
