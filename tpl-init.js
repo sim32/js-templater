@@ -7,7 +7,7 @@ _.onTemplateReady('firstTemplate', function(callback, attribs) {
 * function with any logic on second param. At the end of function callback
 * */
 $(document).on('click', function() {
-    _.reRenderContaintTemplate('firstTemplate', function(callback) {
+    _.reRenderSingleTemplate('firstTemplate', function(callback) {
         var max = 10, min = 0;
         var cnt = Math.floor(Math.random() * (max - min + 1)) + min;
         callback({count: cnt});
